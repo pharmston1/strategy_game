@@ -1,0 +1,681 @@
+{
+
+  "armorTypes" :
+  {  
+    "BodyArmor": 0.05,
+    "Heavy": 0.5,
+    "Light": 0.15,
+    "Medium": 0.3,
+    "None": 0
+  },
+"attackBonus" :
+{
+  "Foot" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Forest": 1.3,
+    "Grass": 1.2,
+    "Hills": 1.2,
+    "Pavement": 1,
+    "Sand": 1,
+    "Water": 0
+  },
+  "Tracked" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Forest": 0.8,
+    "Grass": 1,
+    "Hills": 1,
+    "Pavement": 1,
+    "Sand": 1,
+    "Water": 0
+  },
+  "Wheeled" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Forest": 0.8,
+    "Grass": 1,
+    "Hills": 1,
+    "Pavement": 1,
+    "Sand": 0.8,
+    "Water": 0
+  }
+},
+"defenseBonus" :
+{
+  "Foot" :
+  {  
+    "Default": 0,
+    "Dirt": 0,
+    "Forest": 0.5,
+    "Grass": 0.2,
+    "Hills": 0.4,
+    "Pavement": 0,
+    "Sand": 0,
+    "Water": 0.5
+  },
+  "Tracked" :
+  {  
+    "Default": 0,
+    "Dirt": 0,
+    "Forest": 0.3,
+    "Grass": 0,
+    "Hills": 0.2,
+    "Pavement": 0,
+    "Sand": 0,
+    "Water": 0
+  },
+  "Wheeled" :
+  {  
+    "Default": 0,
+    "Dirt": 0,
+    "Forest": 0.2,
+    "Grass": 0,
+    "Hills": 0.1,
+    "Pavement": 0,
+    "Sand": 0,
+    "Water": 0
+  }
+},
+"equipment" :
+{
+  "AntiPersonnelLight" :
+  {  
+    "Description": "This anti-personnel is effective against infantry.",
+    "DisplayName": "Anti-Personnel round",
+    "EquipmentType": "Ammo",
+    "IconSprite": "AntiP.png",
+    "effectiveAgainst": ["Foot"],
+    "Cost": 12,
+    "Damage": 8,
+    "StackCount": 5
+  },
+  "ArmorPiercingHeavy" :
+  {  
+    "Description": "This armor-piercing round is vastly more effective against heavily-armored targets.",
+    "DisplayName": "AP round",
+    "EquipmentType": "Ammo",
+    "IconSprite": "AP.png",
+    "PenetratesArmor": ["Heavy", "Medium"],
+    "Cost": 30,
+    "Damage": 30,
+    "StackCount": 5
+  },
+  "CannonAmmo" :
+  {  
+    "Description": "Cannon Ammo.",
+    "DisplayName": "Cannon Shell",
+    "EquipmentType": "Ammo",
+    "IconSprite": "CannonAmmo.png",
+    "Cost": 1,
+    "Damage": 8,
+    "StackCount": 5
+  },
+  "DefaultAutomaticRifle" :
+  {  
+    "Description": "da da da da da.",
+    "DisplayName": "Automatic Rifle",
+    "EquipmentType": "Gun",
+    "Sprite": "AutomaticRifle.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["RifleAmmo"],
+    "AmmoCount": 5,
+    "Cost": 25,
+    "RateOfFire": 1
+  },
+  "DefaultBazooka" :
+  {  
+    "Description": "This will knock your socks off.",
+    "DisplayName": "Bazooka",
+    "EquipmentType": "Gun",
+    "Sprite": "Bazooka.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["Rocket"],
+    "AmmoCount": 5,
+    "Cost": 25,
+    "RateOfFire": 1
+  },
+  "DefaultCannon" :
+  {  
+    "Description": "Cannon.",
+    "DisplayName": "Cannon",
+    "EquipmentType": "Gun",
+    "Sprite": "Cannon.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["CannonAmmo"],
+    "AmmoCount": 7,
+    "Cost": 25,
+    "RateOfFire": 1
+  },
+  "DefaultFiftyCal" :
+  {  
+    "Description": "Standard .50 cal.",
+    "DisplayName": ".50 cal",
+    "EquipmentType": "Gun",
+    "Sprite": "FiftyCal.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["FiftyCalAmmo"],
+    "AmmoCount": 7,
+    "Cost": 25,
+    "RateOfFire": 1
+  },
+  "DefaultHeavyTurret" :
+  {  
+    "Description": "This is an expensive Heavy cannon. Its heavy weight slows the tank",
+    "DisplayName": "light tank cannon",
+    "EquipmentType": "Turret",
+    "Sprite": "heavyTurret.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["GeneralHeavy", "ArmorPiercingHeavy"],
+    "AmmoCount": 10,
+    "Cost": 200,
+    "Hitpoints": 100,
+    "MoveSpeed": -4,
+    "RateOfFire": 1
+  },
+  "DefaultHowitzer" :
+  {  
+    "Description": "BOOM.",
+    "DisplayName": "BFG .. err Howitzer",
+    "EquipmentType": "Turret",
+    "Sprite": "Howitzer.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["HowitzerAmmo"],
+    "AmmoCount": 7,
+    "Cost": 300,
+    "RateOfFire": 1
+  },
+  "DefaultLightTurret" :
+  {  
+    "Description": "This is a cheap, reliable cannon.",
+    "DisplayName": "light tank cannon",
+    "EquipmentType": "Turret",
+    "Sprite": "lightTurret.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["GeneralLight", "AntiPersonnelLight"],
+    "AmmoCount": 20,
+    "Cost": 100,
+    "RateOfFire": 1
+  },
+  "DefaultMediumTurret" :
+  {  
+    "Description": "This is a more expensive cannon.  Its weight slows the tank.",
+    "DisplayName": "medium tank cannon",
+    "EquipmentType": "Turret",
+    "Sprite": "mediumTurret.spr",
+    "AmmoTypes": ["GeneralMedium", "HighExplosiveMedium"],
+    "AmmoCount": 15,
+    "Cost": 150,
+    "Hitpoints": 50,
+    "MoveSpeed": -2,
+    "RateOfFire": 1
+  },
+  "FiftyCalAmmo" :
+  {  
+    "Description": "Fifty cal Rifle Ammo.",
+    "DisplayName": ".50 cal Rifle Rounds",
+    "EquipmentType": "Ammo",
+    "IconSprite": "fiftyCalAmmo.png",
+    "Cost": 1,
+    "Damage": 7,
+    "StackCount": 7
+  },
+  "GatlingGun" :
+  {  
+    "Description": "GUH GUH GUH GUH GUH.",
+    "DisplayName": "Gatling Gun",
+    "EquipmentType": "Gun",
+    "Sprite": "GatlingGun.spr",
+    "Visibility": "All",
+    "AmmoTypes": ["GatlingGunAmmo"],
+    "AmmoCount": 5,
+    "Cost": 25,
+    "RateOfFire": 1
+  },
+  "GatlingGunAmmo" :
+  {  
+    "Description": "This ammo is high powered.",
+    "DisplayName": "Gatling round",
+    "EquipmentType": "Ammo",
+    "IconSprite": "gatling.png",
+    "Cost": 1,
+    "Damage": 10,
+    "StackCount": 5
+  },
+  "GeneralHeavy" :
+  {  
+    "Description": "This is a cheap general-purpose tank round.",
+    "DisplayName": "general purpose",
+    "EquipmentType": "Ammo",
+    "IconSprite": "general.png",
+    "Cost": 6,
+    "Damage": 30,
+    "StackCount": 5
+  },
+  "GeneralLight" :
+  {  
+    "Description": "This is a cheap general-purpose tank round.",
+    "DisplayName": "general purpose",
+    "EquipmentType": "Ammo",
+    "IconSprite": "general.png",
+    "Cost": 2,
+    "Damage": 10,
+    "StackCount": 5
+  },
+  "GeneralMedium" :
+  {  
+    "Description": "This is a cheap general-purpose tank round.",
+    "DisplayName": "general purpose",
+    "EquipmentType": "Ammo",
+    "IconSprite": "general.png",
+    "Cost": 4,
+    "Damage": 20,
+    "StackCount": 5
+  },
+  "HighExplosiveMedium" :
+  {  
+    "Description": "This high-explosive round does loads of damage to a single target.",
+    "DisplayName": "HE round",
+    "EquipmentType": "Ammo",
+    "IconSprite": "HE.png",
+    "PenetratesArmor": ["Light", "Unarmored", "BodyArmor"],
+    "Cost": 12,
+    "Damage": 20,
+    "StackCount": 5
+  },
+  "HowitzerAmmo" :
+  {  
+    "Description": "Howitzer Shell.",
+    "DisplayName": "Shells",
+    "EquipmentType": "Ammo",
+    "IconSprite": "Shell.png",
+    "Cost": 8,
+    "Damage": 50,
+    "StackCount": 5
+  },
+  "RifleAmmo" :
+  {  
+    "Description": "Standard Rifle Ammo.",
+    "DisplayName": "Rifle Rounds",
+    "EquipmentType": "Ammo",
+    "IconSprite": "rifleAmmo.png",
+    "Cost": 1,
+    "Damage": 5,
+    "StackCount": 5
+  },
+  "Rocket" :
+  {  
+    "Description": "This rocket will knock their socks off.",
+    "DisplayName": "Rocket",
+    "EquipmentType": "Ammo",
+    "IconSprite": "rocket.png",
+    "Cost": 1,
+    "Damage": 8,
+    "StackCount": 5
+  }
+},
+"factions" :
+{
+  "Agile" :
+  {  
+    "Description": "Hit fast and hit hard.",
+    "Icon": "agile.spr",
+    "Name": "Agile",
+    "KillBonus": 0.8,
+    "Salary": 100,
+    "Color": [1, 1, 1]
+  },
+  "Steampunk" :
+  {  
+    "Description": "Ohhh, that tickles.",
+    "Icon": "steampunk.spr",
+    "Name": "Steampunk",
+    "KillBonus": 0.8,
+    "Salary": 100,
+    "Color": [1, 1, 1]
+  }
+},
+"terrainModifier" :
+{
+  "Float" :
+  {  
+    "Default": 1,
+    "Dirt": 0,
+    "Forest": 0.8,
+    "Grass": 0,
+    "Hills": 1,
+    "Pavement": 0,
+    "Sand": 0,
+    "Water": 1
+  },
+  "Foot" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Grass": 1,
+    "Hills": 1,
+    "Pavement": 1,
+    "Sand": 1,
+    "Water": 0.5
+  },
+  "Tracked" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Forest": 0.2,
+    "Grass": 1,
+    "Hills": 0.5,
+    "Pavement": 1.1,
+    "Sand": 0.8,
+    "Water": 0
+  },
+  "Wheeled" :
+  {  
+    "Default": 1,
+    "Dirt": 1,
+    "Forest": 0.8,
+    "Grass": 0.8,
+    "Hills": 1,
+    "Pavement": 1.5,
+    "Sand": 0.5,
+    "Water": 0
+  }
+},
+"tiletypes" :
+{
+  "Grass" :
+  {  
+    "Sprite": "grass",
+    "Color": [0.2, 0.6, 0.2]
+  },
+  "Pavement" :
+  {  
+    "Sprite": "stone",
+    "Color": [0.5, 0.5, 0.5]
+  },
+  "Sand" :
+  {  
+    "Sprite": "stone",
+    "Color": [0.7, 0.7, 0.4]
+  },
+  "Wall" :
+  {  
+    "Sprite": "shard",
+    "Color": [0.6, 0.6, 0.7]
+  },
+  "Water" :
+  {  
+    "Sprite": "water",
+    "Color": [0.2, 0.7, 0.8]
+  }
+},
+"units" :
+{
+  "AgileAPC" :
+  {  
+    "Armor": "Light",
+    "AttackBonus": "Wheeled",
+    "DefenseBonus": "Wheeled",
+    "Description": "APC that can resupply units and transport infantry",
+    "DisplayName": "APC",
+    "MoveType": "Wheeled",
+    "Sprite": "",
+    "EquipmentList": ["DefaultCannon"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Agile"],
+    "Cost": 200,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 200,
+    "MoveSpeed": 4,
+    "SightRange": 5,
+    "Supplies": 20,
+    "SupplyRange": 2
+  },
+  "AgileArtillery" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Wheeled",
+    "DefenseBonus": "Wheeled",
+    "Description": "Artillery used to Shell enemies at range when deployed",
+    "DisplayName": "Artillery",
+    "MoveType": "Wheeled",
+    "Sprite": "",
+    "EquipmentList": ["DefaultHowitzer"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Agile"],
+    "Cost": 300,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 200,
+    "MoveSpeed": 6,
+    "SightRange": 2
+  },
+  "AgileHeavyInfantry" :
+  {  
+    "Armor": "BodyArmor",
+    "AttackBonus": "Foot",
+    "DefenseBonus": "Foot",
+    "Description": "Heavy Infantry that can capture control points",
+    "DisplayName": "Heavy Infantry",
+    "MoveType": "Foot",
+    "Sprite": "",
+    "EquipmentList": ["DefaultBazooka"],
+    "EquipmentTypes": ["Gun"],
+    "Factions": ["Agile"],
+    "Cost": 50,
+    "Health": 200,
+    "MoveSpeed": 2,
+    "SightRange": 7
+  },
+  "AgileHeavyTank" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Heavy Turret tank that can use Armor Piercing Ammo",
+    "DisplayName": "Heavy Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultHeavyTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Agile"],
+    "Cost": 300,
+    "Fuel": 5,
+    "FuelEfficiency": 0.7,
+    "Health": 200,
+    "MoveSpeed": 9,
+    "SightRange": 5
+  },
+  "AgileLightInfantry" :
+  {  
+    "Armor": "Unarmored",
+    "AttackBonus": "Foot",
+    "DefenseBonus": "Foot",
+    "Description": "Light Infantry that can capture control points",
+    "DisplayName": "Light Infantry",
+    "MoveType": "Foot",
+    "Sprite": "",
+    "EquipmentList": ["DefaultAutomaticRifle"],
+    "EquipmentTypes": ["Gun"],
+    "Factions": ["Agile"],
+    "Cost": 25,
+    "Health": 100,
+    "MoveSpeed": 3,
+    "SightRange": 7
+  },
+  "AgileLightTank" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Light Turret tank that can use Anti-Personnel Ammo",
+    "DisplayName": "Light Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultLightTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Agile"],
+    "Cost": 100,
+    "Fuel": 5,
+    "FuelEfficiency": 1,
+    "Health": 100,
+    "MoveSpeed": 9,
+    "SightRange": 5
+  },
+  "AgileMediumTank" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Medium Turret tank that can use High Explosive Ammo",
+    "DisplayName": "Medium Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultMediumTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Agile"],
+    "Cost": 200,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 150,
+    "MoveSpeed": 9,
+    "SightRange": 5
+  },
+  "SteampunkAPC" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "APC that can resupply units and transport infantry",
+    "DisplayName": "APC",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultGatlingGun"],
+    "EquipmentTypes": ["Gun"],
+    "Factions": ["Steampunk"],
+    "Cost": 200,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 200,
+    "MoveSpeed": 4,
+    "SightRange": 5,
+    "Supplies": 20,
+    "SupplyRange": 2
+  },
+  "SteampunkArtillery" :
+  {  
+    "Armor": "",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Artillery used to Shell enemies at range when deployed",
+    "DisplayName": "Artillery",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultHowitzer"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Steampunk"],
+    "Cost": 300,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 200,
+    "MoveSpeed": 4,
+    "SightRange": 2
+  },
+  "SteampunkHeavyInfantry" :
+  {  
+    "Armor": "Medium",
+    "AttackBonus": "Foot",
+    "DefenseBonus": "Foot",
+    "Description": "Light Infantry that can capture control points",
+    "DisplayName": "Light Infantry",
+    "MoveType": "Foot",
+    "Sprite": "",
+    "EquipmentList": ["DefaultGatlingGun"],
+    "EquipmentTypes": ["Gun"],
+    "Factions": ["Steampunk"],
+    "Cost": 50,
+    "Health": 200,
+    "MoveSpeed": 2,
+    "SightRange": 7
+  },
+  "SteampunkHeavyTank" :
+  {  
+    "Armor": "Heavy",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Heavy Turret tank that can use Armor Piercing Ammo",
+    "DisplayName": "Heavy Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultHeavyTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Steampunk"],
+    "Cost": 300,
+    "Fuel": 5,
+    "FuelEfficiency": 0.7,
+    "Health": 200,
+    "MoveSpeed": 7,
+    "SightRange": 5
+  },
+  "SteampunkLightInfantry" :
+  {  
+    "Armor": "Light",
+    "AttackBonus": "Foot",
+    "DefenseBonus": "Foot",
+    "Description": "Light Infantry that can capture control points",
+    "DisplayName": "Light Infantry",
+    "MoveType": "Foot",
+    "Sprite": "",
+    "EquipmentList": ["DefaultFiftyCal"],
+    "EquipmentTypes": ["Gun"],
+    "Factions": ["Steampunk"],
+    "Cost": 25,
+    "Health": 100,
+    "MoveSpeed": 2,
+    "SightRange": 7
+  },
+  "SteampunkLightTank" :
+  {  
+    "Armor": "Heavy",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Light Turret tank that can use Anti-Personnel Ammo",
+    "DisplayName": "Light Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultLightTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Steampunk"],
+    "Cost": 100,
+    "Fuel": 5,
+    "FuelEfficiency": 1,
+    "Health": 100,
+    "MoveSpeed": 5,
+    "SightRange": 5
+  },
+  "SteampunkMediumTank" :
+  {  
+    "Armor": "Heavy",
+    "AttackBonus": "Tracked",
+    "DefenseBonus": "Tracked",
+    "Description": "Medium Turret tank that can use High Explosive Ammo",
+    "DisplayName": "Medium Tank",
+    "MoveType": "Tracked",
+    "Sprite": "",
+    "EquipmentList": ["DefaultMediumTurret"],
+    "EquipmentTypes": ["Turret"],
+    "Factions": ["Steampunk"],
+    "Cost": 200,
+    "Fuel": 5,
+    "FuelEfficiency": 0.9,
+    "Health": 150,
+    "MoveSpeed": 6,
+    "SightRange": 5
+  }
+}
+
+}

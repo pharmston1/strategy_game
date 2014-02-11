@@ -1,0 +1,1 @@
+{"Info" : { "userID" : "50c624776a1e8","Nickname" : "T3RoZXJHdXk=","Faction" : "Agile","Color" : [1.0,1.0,1.0]},"Buy" : { "P3" : { "Qty" : 3,"Unit" : "AgileLightTank","Drop" : "10 10","Equipment" : ["DefaultLightTurret 1 E4","DefaultCannon 1 E5"],"Attach" : ["E5 E4"]}}, "unitID":{"Move" : ["10 9"],"Stance" : "Default"}}

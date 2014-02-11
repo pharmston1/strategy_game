@@ -1,0 +1,534 @@
+\hypertarget{class_rules_1_1_rules_container}{\section{Rules\-:\-:Rules\-Container Class Reference}
+\label{class_rules_1_1_rules_container}\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}}
+}
+
+
+Parent container for game rules.  
+
+
+
+
+{\ttfamily \#include $<$rules.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} $\ast$ \hyperlink{class_rules_1_1_rules_container_a53aecfc2e5e4608210a3aa1a42a06733}{get\-Entry} (string group\-Key, string entry\-Key)
+\begin{DoxyCompactList}\small\item\em Retrieves a \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class within. \end{DoxyCompactList}\item 
+set$<$ string $>$ \hyperlink{class_rules_1_1_rules_container_af7d4181a8517b91c7ef647ae86fabd59}{get\-Single\-Entry\-Keys} ()
+\item 
+set$<$ string $>$ \hyperlink{class_rules_1_1_rules_container_ac50d947a7f420cc56eb1c675800af601}{get\-Group\-Entry\-Keys} (string group\-Key)
+\item 
+set$<$ string $>$ \hyperlink{class_rules_1_1_rules_container_ad2abd5e08329b09ade41a94522d5a422}{get\-Group\-Keys} ()
+\item 
+bool \hyperlink{class_rules_1_1_rules_container_a38996e8fcd4bb07301c47e8dd0fb8685}{rm\-Entry} (string group\-Key, string entry\-Key)
+\begin{DoxyCompactList}\small\item\em Removes an entry. Also removes newly-\/empty groups. \end{DoxyCompactList}\item 
+string \hyperlink{class_rules_1_1_rules_container_a933f0a5e2471bb618c00fb1a1986e6e5}{serialize} ()
+\begin{DoxyCompactList}\small\item\em Serializes all member \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} classes in one big J\-S\-O\-N string. \end{DoxyCompactList}\item 
+double \hyperlink{class_rules_1_1_rules_container_a6e0dbfc0c46ffb0a9556623723c54597}{get\-Double} (string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a double value from a grouped or single rules entry. \end{DoxyCompactList}\item 
+double \hyperlink{class_rules_1_1_rules_container_aea3e4ac2297f82cf34f4fdbc1d1a50e9}{get\-Double} (string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a double value from a single rules entry only. \end{DoxyCompactList}\item 
+void \hyperlink{class_rules_1_1_rules_container_afd09a98cb51bfa71ec6f1107878d7568}{add\-Double} (double value, string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Adds a double record. Will automatically create groups and entries as needed. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{class_rules_1_1_rules_container_a3a63291a418002e075fd5bbf3370c0d8}{get\-Double\-Array} (string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a double array (S\-T\-L vector) value from a grouped or single rules entry. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \hyperlink{class_rules_1_1_rules_container_af366a4e784f723be54d2f5da301f59ff}{get\-Double\-Array} (string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a double array (S\-T\-L vector) value from a single rules entry only. \end{DoxyCompactList}\item 
+void \hyperlink{class_rules_1_1_rules_container_acf6173b4cfef7a9aaa04ac27c4782007}{add\-Double\-Array} (vector$<$ double $>$ value, string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Adds a double array (S\-T\-L vector) record. Will automatically create groups and entries as needed. \end{DoxyCompactList}\item 
+string \hyperlink{class_rules_1_1_rules_container_ad8a93e5441719e6f52239cc56500eb3f}{get\-String} (string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a string value from a grouped or single rules entry. \end{DoxyCompactList}\item 
+string \hyperlink{class_rules_1_1_rules_container_affcb0dcb03e673c44a04baffa470edbf}{get\-String} (string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a string value from a single rules entry only. \end{DoxyCompactList}\item 
+void \hyperlink{class_rules_1_1_rules_container_abf95f3b2bbd9133c24994b8c4bb656b0}{add\-String} (string value, string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Adds a string record. Will automatically create groups and entries as needed. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_rules_1_1_rules_container_aded0080ba412463b5bc6c19e6699292a}{get\-String\-Array} (string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a string array (S\-T\-L vector) value from a grouped or single rules entry. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_rules_1_1_rules_container_a6d1fc8b4284cec7f1da4cc84d7fe74f2}{get\-String\-Array} (string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Gets a string array (S\-T\-L vector) value from a single rules entry only. \end{DoxyCompactList}\item 
+void \hyperlink{class_rules_1_1_rules_container_ac46075ef8f7d1b834dee76648a81a504}{add\-String\-Array} (vector$<$ string $>$ value, string group\-Key, string entry\-Key, string value\-Key)
+\begin{DoxyCompactList}\small\item\em Adds a string array (S\-T\-L vector) record. Will automatically create groups and entries as needed. \end{DoxyCompactList}\item 
+void \hyperlink{class_rules_1_1_rules_container_ae5d66750a18e8d7e459b35744f83e1b6}{add\-Entry} (\hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} $\ast$entry, string group\-Key=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_rules_1_1_rules_container_a3ac0f88738f539811d18ddc201db870f}{parse\-Jzon} (\hyperlink{class_jzon_1_1_object}{Jzon\-::\-Object} \&root\-Node)
+\begin{DoxyCompactList}\small\item\em Parses a Jzon object and creates entry containers. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rules_1_1_rules_container_a590395736d28b189773f563d615eeec2}{deserialize} (string json)
+\begin{DoxyCompactList}\small\item\em Populates the object from a J\-S\-O\-N string. \end{DoxyCompactList}\item 
+bool \hyperlink{class_rules_1_1_rules_container_a9ed1c6da6d99331f3ce79148c275c1f6}{load\-Json\-File} (string filename)
+\begin{DoxyCompactList}\small\item\em Populates the object from a J\-S\-O\-N file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent container for game rules. 
+
+\begin{DoxyAuthor}{Author}
+Chris Livingston
+\end{DoxyAuthor}
+Contains two levels of \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} classes, which contain single and array strings and doubles. Can serialize to and from J\-S\-O\-N. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rules_1_1_rules_container_afd09a98cb51bfa71ec6f1107878d7568}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!add\-Double@{add\-Double}}
+\index{add\-Double@{add\-Double}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{add\-Double}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::add\-Double (
+\begin{DoxyParamCaption}
+\item[{double}]{value, }
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_afd09a98cb51bfa71ec6f1107878d7568}
+
+
+Adds a double record. Will automatically create groups and entries as needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to store to a single entry. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rules_1_1_rules_container_acf6173b4cfef7a9aaa04ac27c4782007}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!add\-Double\-Array@{add\-Double\-Array}}
+\index{add\-Double\-Array@{add\-Double\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{add\-Double\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::add\-Double\-Array (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$}]{value, }
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_acf6173b4cfef7a9aaa04ac27c4782007}
+
+
+Adds a double array (S\-T\-L vector) record. Will automatically create groups and entries as needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to store to a single entry. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rules_1_1_rules_container_ae5d66750a18e8d7e459b35744f83e1b6}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!add\-Entry@{add\-Entry}}
+\index{add\-Entry@{add\-Entry}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{add\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::add\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Rules\-Entry} $\ast$}]{entry, }
+\item[{string}]{group\-Key = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_rules_1_1_rules_container_ae5d66750a18e8d7e459b35744f83e1b6}
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & (optional) Target group \\
+\hline
+{\em entry} & Pointer to \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class to insert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Rules\-Entry\-::title is used as the entry key. Will replace \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class of matching key and group. 
+\end{DoxyWarning}
+\hypertarget{class_rules_1_1_rules_container_abf95f3b2bbd9133c24994b8c4bb656b0}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!add\-String@{add\-String}}
+\index{add\-String@{add\-String}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{add\-String}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::add\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{value, }
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_abf95f3b2bbd9133c24994b8c4bb656b0}
+
+
+Adds a string record. Will automatically create groups and entries as needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to store to a single entry. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rules_1_1_rules_container_ac46075ef8f7d1b834dee76648a81a504}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!add\-String\-Array@{add\-String\-Array}}
+\index{add\-String\-Array@{add\-String\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{add\-String\-Array}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::add\-String\-Array (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{value, }
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_ac46075ef8f7d1b834dee76648a81a504}
+
+
+Adds a string array (S\-T\-L vector) record. Will automatically create groups and entries as needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to store to a single entry. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_rules_1_1_rules_container_a590395736d28b189773f563d615eeec2}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Rules\-::\-Rules\-Container\-::deserialize (
+\begin{DoxyParamCaption}
+\item[{string}]{json}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_rules_1_1_rules_container_a590395736d28b189773f563d615eeec2}
+
+
+Populates the object from a J\-S\-O\-N string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & J\-S\-O\-N data in S\-T\-L string form. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success, false on parsing error. Error output is directed to stderr. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a6e0dbfc0c46ffb0a9556623723c54597}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Double@{get\-Double}}
+\index{get\-Double@{get\-Double}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double Rules\-::\-Rules\-Container\-::get\-Double (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a6e0dbfc0c46ffb0a9556623723c54597}
+
+
+Gets a double value from a grouped or single rules entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to retrieve from single entries. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value if found, 0 if entry, group or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_aea3e4ac2297f82cf34f4fdbc1d1a50e9}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Double@{get\-Double}}
+\index{get\-Double@{get\-Double}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double Rules\-::\-Rules\-Container\-::get\-Double (
+\begin{DoxyParamCaption}
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_aea3e4ac2297f82cf34f4fdbc1d1a50e9}
+
+
+Gets a double value from a single rules entry only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Cannot search grouped entries. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Value if found, 0 if entry or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a3a63291a418002e075fd5bbf3370c0d8}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Double\-Array@{get\-Double\-Array}}
+\index{get\-Double\-Array@{get\-Double\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Double\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ Rules\-::\-Rules\-Container\-::get\-Double\-Array (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a3a63291a418002e075fd5bbf3370c0d8}
+
+
+Gets a double array (S\-T\-L vector) value from a grouped or single rules entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to retrieve from single entries. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value if found, empty vector if entry, group or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_af366a4e784f723be54d2f5da301f59ff}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Double\-Array@{get\-Double\-Array}}
+\index{get\-Double\-Array@{get\-Double\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Double\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ double $>$ Rules\-::\-Rules\-Container\-::get\-Double\-Array (
+\begin{DoxyParamCaption}
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_af366a4e784f723be54d2f5da301f59ff}
+
+
+Gets a double array (S\-T\-L vector) value from a single rules entry only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Cannot search grouped entries. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Value if found, empty vector if entry or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a53aecfc2e5e4608210a3aa1a42a06733}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Entry@{get\-Entry}}
+\index{get\-Entry@{get\-Entry}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Rules\-Entry} $\ast$ Rules\-::\-Rules\-Container\-::get\-Entry (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a53aecfc2e5e4608210a3aa1a42a06733}
+
+
+Retrieves a \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class within. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to retrieve from single entries. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_ac50d947a7f420cc56eb1c675800af601}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Group\-Entry\-Keys@{get\-Group\-Entry\-Keys}}
+\index{get\-Group\-Entry\-Keys@{get\-Group\-Entry\-Keys}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Group\-Entry\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ string $>$ Rules\-::\-Rules\-Container\-::get\-Group\-Entry\-Keys (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_ac50d947a7f420cc56eb1c675800af601}
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Key to group to retrieve keys from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Set of entry keys from the specified group. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Will return an empty set if the group\-Key is not found. 
+\end{DoxyWarning}
+\hypertarget{class_rules_1_1_rules_container_ad2abd5e08329b09ade41a94522d5a422}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Group\-Keys@{get\-Group\-Keys}}
+\index{get\-Group\-Keys@{get\-Group\-Keys}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Group\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ string $>$ Rules\-::\-Rules\-Container\-::get\-Group\-Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_ad2abd5e08329b09ade41a94522d5a422}
+\begin{DoxyReturn}{Returns}
+Set of group keys in this container. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_af7d4181a8517b91c7ef647ae86fabd59}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-Single\-Entry\-Keys@{get\-Single\-Entry\-Keys}}
+\index{get\-Single\-Entry\-Keys@{get\-Single\-Entry\-Keys}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-Single\-Entry\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ string $>$ Rules\-::\-Rules\-Container\-::get\-Single\-Entry\-Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_af7d4181a8517b91c7ef647ae86fabd59}
+\begin{DoxyReturn}{Returns}
+Set of this container's single entry keys. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_ad8a93e5441719e6f52239cc56500eb3f}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Rules\-::\-Rules\-Container\-::get\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_ad8a93e5441719e6f52239cc56500eb3f}
+
+
+Gets a string value from a grouped or single rules entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to retrieve from single entries. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value if found, blank (\char`\"{}\char`\"{}) if entry, group or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_affcb0dcb03e673c44a04baffa470edbf}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-String@{get\-String}}
+\index{get\-String@{get\-String}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Rules\-::\-Rules\-Container\-::get\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_affcb0dcb03e673c44a04baffa470edbf}
+
+
+Gets a string value from a single rules entry only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Cannot search grouped entries. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Value if found, blank (\char`\"{}\char`\"{}) if entry or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_aded0080ba412463b5bc6c19e6699292a}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-String\-Array@{get\-String\-Array}}
+\index{get\-String\-Array@{get\-String\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-String\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Rules\-::\-Rules\-Container\-::get\-String\-Array (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_aded0080ba412463b5bc6c19e6699292a}
+
+
+Gets a string array (S\-T\-L vector) value from a grouped or single rules entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Group key. Use a blank string (\char`\"{}\char`\"{}) to retrieve from single entries. \\
+\hline
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value if found, empty vector if entry, group or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a6d1fc8b4284cec7f1da4cc84d7fe74f2}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!get\-String\-Array@{get\-String\-Array}}
+\index{get\-String\-Array@{get\-String\-Array}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{get\-String\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Rules\-::\-Rules\-Container\-::get\-String\-Array (
+\begin{DoxyParamCaption}
+\item[{string}]{entry\-Key, }
+\item[{string}]{value\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a6d1fc8b4284cec7f1da4cc84d7fe74f2}
+
+
+Gets a string array (S\-T\-L vector) value from a single rules entry only. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\-Key} & The key/title of the \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class containing the value. \\
+\hline
+{\em value\-Key} & Key to value within target \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} class. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Cannot search grouped entries. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Value if found, empty vector if entry or value are not found. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a9ed1c6da6d99331f3ce79148c275c1f6}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!load\-Json\-File@{load\-Json\-File}}
+\index{load\-Json\-File@{load\-Json\-File}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{load\-Json\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool Rules\-::\-Rules\-Container\-::load\-Json\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_rules_1_1_rules_container_a9ed1c6da6d99331f3ce79148c275c1f6}
+
+
+Populates the object from a J\-S\-O\-N file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & J\-S\-O\-N file to parse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success, false on parsing error. Error output is directed to stderr. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a3ac0f88738f539811d18ddc201db870f}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!parse\-Jzon@{parse\-Jzon}}
+\index{parse\-Jzon@{parse\-Jzon}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{parse\-Jzon}]{\setlength{\rightskip}{0pt plus 5cm}void Rules\-::\-Rules\-Container\-::parse\-Jzon (
+\begin{DoxyParamCaption}
+\item[{{\bf Jzon\-::\-Object} \&}]{root\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_rules_1_1_rules_container_a3ac0f88738f539811d18ddc201db870f}
+
+
+Parses a Jzon object and creates entry containers. 
+
+\begin{DoxyWarning}{Warning}
+Use the \hyperlink{class_rules_1_1_rules_container_a590395736d28b189773f563d615eeec2}{deserialize()} or \hyperlink{class_rules_1_1_rules_container_a9ed1c6da6d99331f3ce79148c275c1f6}{load\-Json\-File()} functions instead. 
+\end{DoxyWarning}
+\hypertarget{class_rules_1_1_rules_container_a38996e8fcd4bb07301c47e8dd0fb8685}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!rm\-Entry@{rm\-Entry}}
+\index{rm\-Entry@{rm\-Entry}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{rm\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}bool Rules\-::\-Rules\-Container\-::rm\-Entry (
+\begin{DoxyParamCaption}
+\item[{string}]{group\-Key, }
+\item[{string}]{entry\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a38996e8fcd4bb07301c47e8dd0fb8685}
+
+
+Removes an entry. Also removes newly-\/empty groups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\-Key} & Key to parent group of entry. Leave blank (\char`\"{}\char`\"{}) for single entries. \\
+\hline
+{\em entry\-Key} & Key to entry to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success. 
+\end{DoxyReturn}
+\hypertarget{class_rules_1_1_rules_container_a933f0a5e2471bb618c00fb1a1986e6e5}{\index{Rules\-::\-Rules\-Container@{Rules\-::\-Rules\-Container}!serialize@{serialize}}
+\index{serialize@{serialize}!Rules::RulesContainer@{Rules\-::\-Rules\-Container}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}string Rules\-::\-Rules\-Container\-::serialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_rules_1_1_rules_container_a933f0a5e2471bb618c00fb1a1986e6e5}
+
+
+Serializes all member \hyperlink{class_rules_1_1_rules_entry}{Rules\-Entry} classes in one big J\-S\-O\-N string. 
+
+\begin{DoxyReturn}{Returns}
+This \hyperlink{class_rules_1_1_rules_container}{Rules\-Container} fully serialized in J\-S\-O\-N. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rules_8h}{rules.\-h}\item 
+\hyperlink{rules_8cpp}{rules.\-cpp}\end{DoxyCompactItemize}

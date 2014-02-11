@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="vcwin32">
+</Property><Property Name="Solution File" Value="C:\Users\Chris\Desktop\strat150\strat150_server_simulator\combined\pdcurses\win32\vcwin32.sln">
+</Property><Property Name="Date" Value="Friday, November 23, 2012">
+</Property><Property Name="Time" Value="14:49:52 PM">
+</Property></Properties><Event ErrorLevel="0" Project="vcwin32" Source="vcwin32.mak" Description="Converting project file 'C:\Users\Chris\Desktop\strat150\strat150_server_simulator\combined\pdcurses\win32\vcwin32.mak'.">
+</Event><Event ErrorLevel="2" Project="C:\Users\Chris\Desktop\strat150\strat150_server_simulator\combined\pdcurses\win32\vcwin32.mak" Source="" Description="The following error has occurred during XML parsing:&#xA;&#xA;File: C:\Users\Chris\Desktop\strat150\strat150_server_simulator\combined\pdcurses\win32\vcwin32.mak&#xA;Line: 1&#xA;Column: 1&#xA;Error Message:&#xA;Incorrect document syntax.&#xA;&#xA;The file 'C:\Users\Chris\Desktop\strat150\strat150_server_simulator\combined\pdcurses\win32\vcwin32.mak' has failed to load.">
+</Event><Event ErrorLevel="2" Project="vcwin32" Source="vcwin32.mak" Description="End tag 'xs:choice' does not match the start tag 'xs:sequence'.&#xA;">
+</Event><Event ErrorLevel="2" Project="vcwin32" Source="vcwin32.mak" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="vcwin32" Source="vcwin32.mak" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="" Source="vcwin32.mak" Description="Project upgrade failed.">
+</Event></UpgradeLog>

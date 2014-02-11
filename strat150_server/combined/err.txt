@@ -1,0 +1,6 @@
+[./pdcurses/demos/testcurs.c:975]: (error) Buffer access out-of-bounds: wacs_values
+[./pdcurses/demos/worm.c:341]: (error) Common realloc mistake: "ref" nulled but not freed upon failure
+[./pdcurses/pdcurses/clear.c:89]: (error) Possible null pointer dereference: win - otherwise it is redundant to check if win is null at line 94
+[./pdcurses/pdcurses/clear.c:90]: (error) Possible null pointer dereference: win - otherwise it is redundant to check if win is null at line 94
+[./pdcurses/x11/x11.c:1688]: (error) Common realloc mistake: "tmpsel" nulled but not freed upon failure
+[./pdcurses/x11/x11.c:2550]: (error) Common realloc mistake: "tmpsel" nulled but not freed upon failure

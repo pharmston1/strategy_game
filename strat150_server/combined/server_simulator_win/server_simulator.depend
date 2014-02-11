@@ -1,0 +1,225 @@
+# depslib dependency file v1.0
+1353637064 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/driver.cpp
+	"Update.h"
+	<ctime>
+	<string.h>
+	<cstdlib>
+	<unistd.h>
+	<windows.h>
+
+1353634282 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Update.h
+	"tree.h"
+	"Files.h"
+
+1353184149 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/tree.h
+	"Units.h"
+	<iostream>
+
+1353630417 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Units.h
+	<vector>
+	<queue>
+	<string>
+	"Players.h"
+	"rules.h"
+	<stdlib.h>
+
+1353554148 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Players.h
+	<string>
+
+1353114636 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/rules.h
+	<map>
+	<string>
+	<vector>
+	<sstream>
+	<list>
+	<set>
+	<iostream>
+	<fstream>
+	"Jzon.h"
+
+1353112989 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Jzon.h
+	<string>
+	<vector>
+	<queue>
+	<iterator>
+	<stdexcept>
+
+1353637173 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Files.h
+	"Jzon.h"
+	"dirent.h"
+	<dirent.h>
+	"properties.h"
+	<curses.h>
+	<queue>
+	<map>
+	<iostream>
+
+1353631421 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/properties.h
+	<algorithm>
+	<fstream>
+	<string>
+	"Paths.h"
+
+1353112989 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Jzon.cpp
+	"Jzon.h"
+	<sstream>
+	<fstream>
+	<stack>
+	<algorithm>
+
+1353630427 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/rules.cpp
+	"rules.h"
+
+1353112989 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/dirent.h
+	<stdio.h>
+	<stdarg.h>
+	<windef.h>
+	<winbase.h>
+	<wchar.h>
+	<winnls.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stringapiset.h>
+
+1353630411 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/faction stuff/Paths.h
+
+1354143604 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Jzon.cpp
+	"Jzon.h"
+	<sstream>
+	<fstream>
+	<stack>
+	<algorithm>
+
+1354143604 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Jzon.h
+	<string>
+	<vector>
+	<queue>
+	<iterator>
+	<stdexcept>
+
+1354764118 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/rules.cpp
+	"rules.h"
+
+1354764231 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/rules.h
+	<map>
+	<string>
+	<vector>
+	<sstream>
+	<list>
+	<set>
+	<iostream>
+	<fstream>
+	"Jzon.h"
+
+1354669475 source:/home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/driver.cpp
+	"Update.h"
+	<ctime>
+	<string.h>
+	<cstdlib>
+	<string>
+	"support.h"
+	<unistd.h>
+	<windows.h>
+
+1354669475 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Update.h
+	"Players.h"
+	"Units.h"
+	"Files.h"
+	"GameMap.h"
+	"Equipment.h"
+
+1353651583 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/tree.h
+	"Units.h"
+	<iostream>
+
+1354762370 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Units.h
+	<vector>
+	<queue>
+	<string>
+	"Players.h"
+	"rules.h"
+	<stdlib.h>
+	"Actor.h"
+
+1354752994 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Players.h
+	<string>
+	"simulator.h"
+	"support.h"
+
+1354763049 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Files.h
+	"Jzon.h"
+	"dirent.h"
+	<dirent.h>
+	"properties.h"
+	"support.h"
+	<curses.h>
+	<queue>
+	<map>
+	<iostream>
+	<ctime>
+
+1353651583 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/dirent.h
+	<stdio.h>
+	<stdarg.h>
+	<windef.h>
+	<winbase.h>
+	<wchar.h>
+	<winnls.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<errno.h>
+	<stringapiset.h>
+
+1353989855 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/properties.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<fstream>
+	<string>
+	"Paths.h"
+
+1354669751 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Paths.h
+
+1354764188 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/GameMap.h
+	<vector>
+	<map>
+	<fstream>
+	"Tile.h"
+	"Jzon.h"
+	"support.h"
+
+1353652856 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Tile.h
+	<string>
+
+1354501562 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/support.h
+	<iostream>
+	<fstream>
+
+1354764068 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Actor.h
+	<vector>
+	<queue>
+	<string>
+	<stdlib.h>
+	<set>
+	"rules.h"
+	"Players.h"
+
+1354762424 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/Equipment.h
+	"Actor.h"
+	"Units.h"
+
+1354675538 /home/chris/Documents/Homework/CSCI 150/strat150_server_simulator/combined/simulator.h
+	<string>
+	<set>
+	<map>
+	"Players.h"
+	"rules.h"
+	"Actor.h"
+	"Units.h"
+	"Equipment.h"
+

@@ -1,0 +1,17 @@
+{
+    "Title": "Test Map",
+    "Description": "The place where tests do battle",
+    "Dimensions": [5, 5],
+    "DefaultRules": "rules.json",
+    "DefaultTile": "Grass",
+	"Rectangles":
+	[
+		{"Bounds": [0,	0,	1,	1],	"Type": "Water"},
+		{"Bounds": [4,	0,	1,	1],	"Type": "Water"},
+		{"Bounds": [0,	4,	1,	1],	"Type": "Water"},
+		{"Bounds": [4,	4,	1,	1],	"Type": "Water"},
+		{"Bounds": [1,	1,	3,	3],	"Type": "Sand"},
+		{"Bounds": [2,	0,	1,	5],	"Type": "Pavement"},
+		{"Bounds": [0,	2,	5,	1],	"Type": "Pavement"}
+	]
+}
